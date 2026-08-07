@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-h1 {
+/* h1 {
   color: black;
   font-size: 100px;
   background-color: greenyellow;
@@ -28,7 +28,59 @@ span {
   background-color: rgba(172, 255, 47, 0.501);
 }
 
-#para-two{
+#para-two {
   color: greenyellow;
   background-color: black;
+}
+
+.next-para {
+  color: rgb(255, 0, 183);
+}
+
+.another-para {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  background-color: rgb(255, 0, 183);
+  color: white;
+}
+
+.nature {
+  background-image: url(./images/pexels-bertellifotografia-19923043.jpg);
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nature h2 {
+  font-size: 80px;
+}
+
+.nature p {
+  color: greenyellow;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+} */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  text-shadow: 3px 3px 3px gray;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-style: italic;
+}
+
+button{
+  background-color: bisque;
+  color: white;
+  border: 9px solid black;
+  border-width: 6px;
+  border-style: double;
+
 }
