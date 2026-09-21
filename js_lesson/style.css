@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Google Sans", Arial;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+} */
+
+#title{
+font-size: 3rem;
+margin: 1rem;
+}
+
+#btn{
+margin-left: 1rem;
+background-color: red;
+color: white;
+font-size: 1.1rem;
+padding: 12px;
+border: none;
+border-radius: 6px;
+}
+
+#discover{
+    margin-left: 1rem;
+    font-size: 3rem;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container form{
+    background-color: rgb(228, 228, 228);
+    padding: 1rem;
+    width: 30%;
+}
+
+.container form h3{
+    color: red;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.container form #phrase{
+   width: 90%;
+   margin: 0.6rem 0;
+   font-size: 0.9rem;
+}
+
+.container form .key{
+   font-weight: 500;
+}
+
+.container form input{
+    width: 90%;
+    padding: 0.3rem;
+    outline: none;
+}
+
+.container form #canceled{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.9rem;
+    cursor: pointer;
+}
+
+.container form #delete{
+    background-color: rgb(167, 167, 167);
+    color: white;
+    border: none;
+    padding: 0.3rem 0.9rem;
+}
+
