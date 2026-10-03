@@ -222,4 +222,218 @@ if (noteMoyenne >= 80) {
 }
 
 console.log(`La moyenne ${noteMoyenne} est : ${pairOrImpaire}`);
-console.log(studentStatus)
+console.log(studentStatus);
+console.log("\n");
+
+// Exercice donner a l'utilisateur l'acces
+
+let userName = "Tresor";
+let useAge = 9;
+let isPremium = true;
+
+if (useAge >= 18 && isPremium) {
+  console.log("Acces autorisé avec succes !");
+} else {
+  console.log("Acces refusé Desolé !");
+}
+
+// Les boucles en js
+
+// 1. Boucle for
+// for (let i = 0; i <= 75; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i);
+//   }
+// }
+let num = 5;
+for (let i = 1; i <= 12; i++) {
+  console.log(`${num} * ${i} = ${num * i}`);
+}
+// for (let i = 35; i >= 1; i--) {
+//   console.log(i);
+// }
+
+// 2. Boucle while
+let i = 1;
+while (i <= 10) {
+  console.log(i);
+  i++;
+  if (i === 5) {
+    break;
+  }
+}
+
+// Boucle do....while
+
+let j = 1;
+
+do {
+  console.log(j);
+  j++;
+} while (j <= 5);
+
+const num2 = 7;
+for (let i = 1; i <= 12; i++) {
+  console.log(`${num2} * ${i} = ${num2 * i}`);
+}
+
+console.log(`\n---------------------------------`);
+
+for (let i = 0; i <= 30; i++) {
+  if (i % 3 !== 0) {
+    continue;
+  }
+  console.log(i);
+}
+
+console.log(
+  `\n--------------- Calcule somme de nombres 1 a 10 ------------------`,
+);
+let num3 = 0;
+for (let n = 1; n <= 10; n++) {
+  num3 += n;
+}
+
+console.log(num3);
+
+console.log(`\n--------------- Table de multiplication ------------------`);
+
+for (let i = 1; i <= 12; i++) {
+  for (let j = 1; j <= 12; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
+  console.log(`\n`);
+}
+
+// Les functions
+// function saluer() {
+//   console.log("Bonjour, comment allez-vous ?");
+// }
+
+// saluer();
+// saluer();
+
+// // les parametres et les arguments
+// function greet(name, age) {
+//   console.log(`Bonjour ${name}, vous avez ${age} ans.`);
+// }
+
+// greet("Deo", 19);
+// greet("Julien", 20);
+// greet("Josue", 25);
+// greet("Guy", 27);
+
+// function mutiplication(num1, num2, num3) {
+//   console.log(`${num1} * ${num2} * ${num3} = ${num1 * num2 * num3}`);
+// }
+
+// mutiplication(2, 3, 5);
+
+// // return
+// function addition(a, b) {
+//   return a + b;
+// }
+
+// let result = addition(10, 5);
+// console.log(addition(5, 6));
+// console.log(result);
+
+// // Exercice calculer la moyenne en utilisant une fonction
+// function calculerMoyenne(note1, note2, note3, nameEtudiant) {
+//   if ((note1 + note2 + note3) / 3 >= 50) {
+//     return `L'etudiant ${nameEtudiant} a reussi.`;
+//   } else {
+//     return `L'etudiant ${nameEtudiant} a echoue`;
+//   }
+// }
+
+// console.log(calculerMoyenne(56, 46, 80, "Deo"));
+
+// // Boucle dans une fonction
+
+// function afficherNombre(limite) {
+//   for (let i = 0; i <= limite; i++) {
+//     console.log(i);
+//   }
+// }
+
+// afficherNombre(5);
+
+// // Valeur par defaut
+// function saluerValeur(nom = "Visiteur") {
+//   console.log(`Bonjour ${nom}`);
+// }
+
+// saluerValeur();
+// saluerValeur("Djodjo");
+
+// // Fonctions anonymes
+// const additionner = function (a, b) {
+//   return a + b;
+// };
+
+// console.log(additionner(45, 35));
+
+// // Fonction fleche
+
+// const division = (a, b) => {
+//   return a / b;
+// };
+// console.log(division(15, 5));
+
+// Exercice
+
+function addition(a, b) {
+  return a + b;
+}
+
+function soustraction(a, b) {
+  return a - b;
+}
+
+function multiplication(a, b) {
+  return a * b;
+}
+
+function division(a, b) {
+  if (b === 0) {
+    return "Division par zero impossible";
+  } else {
+    return a / b;
+  }
+}
+
+console.log(addition(10, 5));
+console.log(soustraction(10, 5));
+console.log(multiplication(10, 5));
+console.log(division(10, 0));
+
+// Exercice une fonction qui calcule la mention de la moyenne
+
+function afficherMentionMoyenne(note1, note2, note3) {
+  const moyenne = (note1 + note2 + note3) / 3;
+
+  if (moyenne >= 80) {
+    return "Excellent";
+  } else if (moyenne >= 70) {
+    return "Tres bien";
+  } else if (moyenne >= 60) {
+    return "Bien";
+  } else if (moyenne >= 50) {
+    return "Passable";
+  } else {
+    return "Echec";
+  }
+}
+
+console.log(afficherMentionMoyenne(80, 70, 90));
+
+// Exercice : Une fonction qui affiche la table de multiplication d'un nombre entre par le user
+
+function afficherTableDeMultplication(nombre) {
+  for (let i = 1; i <= 12; i++) {
+    console.log(`${nombre} * ${i} = ${nombre * i}`);
+  }
+}
+
+afficherTableDeMultplication(5);
