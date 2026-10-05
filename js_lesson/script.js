@@ -437,3 +437,139 @@ function afficherTableDeMultplication(nombre) {
 }
 
 afficherTableDeMultplication(5);
+
+// LE TABLEAU EN JS
+console.log(`\n----------Le tableau en js------------`);
+let fruits = ["Pomme", "Banane", "Orange", "Mangue", "Fraise"];
+
+/*console.log(fruits[[0]]);
+console.log(fruits[[2]]);
+fruits[1] = "Avocat";
+
+// Afficher la taille du tableau
+console.log(fruits.length);
+
+// Afficher le dernier element du tableau
+console.log(fruits[fruits.length - 1]);
+
+// Ajouter un elemenent a la fin du tableau
+fruits.push("Citron");
+console.log(fruits);
+
+// Ajouter un element au debut du tableau
+fruits.unshift("Papaye");
+
+// Supprimer le dernier element d'un tableau
+fruits.pop();
+console.log(fruits);
+
+// Supprimer le premier element du tableau
+fruits.shift();
+console.log(fruits);
+
+// Verifier l'exixtence d'une element dans un tableau
+console.log(fruits.includes("Orange"));
+
+// Verifier l'index d'un element
+console.log(fruits.indexOf("Mangue"))
+
+// Parcourir les elements d'un tableau
+for(let i = 0; i < fruits.length; i++){
+  console.log(fruits[i])
+}*/
+
+fruits.forEach((fruit) => {
+  console.log(fruit);
+});
+
+const notes = [12, 25, 80];
+
+let somme = 0;
+notes.forEach((index) => {
+  somme = somme + index;
+});
+
+console.log(somme);
+let moyenneNo = somme / notes.length;
+console.log(moyenneNo);
+
+const nombres = [1, 2, 3, 4, 5];
+
+// Transformer les elements d'un tableau
+const nombresDouble = nombres.map((num) => {
+  return num * 2;
+});
+console.log(nombresDouble);
+
+// Filtrer les elements d'un tableau
+const nombres2 = [10, 15, 20, 25, 30];
+const nombreSuperieurVinght = nombres2.filter((num) => {
+  return num >= 20;
+});
+
+console.log(nombreSuperieurVinght);
+
+// Rechercher un element dans un tableau
+const superieurA23 = nombres2.find((nombre) => {
+  return nombre > 18;
+});
+console.log(superieurA23);
+
+// LES OBJETS EN JS
+const student = {
+  name: "Deo",
+  nationality: "Congolese",
+  age: 19,
+};
+
+console.log(student);
+console.log(student.name, student.nationality);
+
+// Modifier la valeur d'une propriete
+student.age = 20;
+console.log(student.age);
+
+// Ajouter une propriete dans un tableau
+student.email = "deo@gmail.com";
+console.log(student.email);
+
+// Tableau dans un objet
+const etudiant = {
+  nom: "Josue",
+  age: 15,
+  notes: [12, 8, 7, 15],
+};
+console.log(etudiant.notes);
+console.log(etudiant.notes[2]);
+
+// TABLEAU DES OBJETS
+const students = [
+  {
+    name: "Deo",
+    sexe: "M",
+    age: 21,
+  },
+
+  {
+    name: "Josue",
+    sexe: "M",
+    age: 21,
+  },
+
+  {
+    name: "Julien",
+    sexe: "M",
+    age: 20,
+  },
+];
+
+console.log(students[0].name);
+
+// Parcourir un tableau d'objet
+for (let i = 0; i < students.length; i++) {
+  console.log(students[i].name);
+}
+
+students.forEach((student)=>{
+  console.log(student.age)
+})
