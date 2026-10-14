@@ -570,6 +570,81 @@ for (let i = 0; i < students.length; i++) {
   console.log(students[i].name);
 }
 
-students.forEach((student)=>{
-  console.log(student.age)
-})
+students.forEach((student) => {
+  console.log(student.age);
+});
+
+// EXERCICE
+
+const etudiants = [
+  {
+    nom: "Clarisse",
+    age: 20,
+    moyenne: 75,
+  },
+
+  {
+    nom: "Julien",
+    age: 28,
+    moyenne: 59,
+  },
+
+  {
+    nom: "Christine",
+    age: 15,
+    moyenne: 80,
+  },
+
+  {
+    nom: "Joseph",
+    age: 16,
+    moyenne: 45,
+  },
+
+  {
+    nom: "Esther",
+    age: 23,
+    moyenne: 65,
+  },
+];
+
+console.log(`\n----------Exercice-------------`);
+
+// Affichage de tous les etudiants
+for (let i = 0; i < etudiants.length; i++) {
+  console.log(etudiants[i]);
+}
+
+// Affichage des noms uniquement
+etudiants.forEach((etudiant) => {
+  console.log(etudiant.nom);
+});
+
+// Etudiant ayant une moyenne superieur a 50;
+const etudiantAyantReussi = etudiants.filter((etudiant) => {
+  return etudiant.moyenne >= 50;
+});
+console.log(etudiantAyantReussi);
+
+// Calculer le nombres d'etudiant
+console.log(etudiants.length);
+
+// Afficher tous les etudiants mineur
+const etudiantsMineurs = etudiants.filter((etudiant) => {
+  return etudiant.age < 18;
+});
+console.log(etudiantsMineurs);
+
+// Function qui cherche le nom d'un etudiant
+
+function chercherNomEtudiant(liste, name) {
+  let etudiant = liste.find((e) => {
+    return e.nom === name;
+  });
+
+  if (etudiant) {
+    return etudiant;
+  }
+}
+
+console.log(chercherNomEtudiant(etudiants, "Esther"));
